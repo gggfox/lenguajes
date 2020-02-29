@@ -1,0 +1,17 @@
+#lang racket
+;function for finding total number of odd numbers in a list
+(define (odd-future mylist)
+  (cond
+    [(empty? mylist) 0]
+    [else(if(odd? (first mylist))
+            (+ 1 (odd-future(rest mylist)));TRUE
+            (+ 0 (odd-future(rest mylist)));FALSE
+          )]))
+
+;function to display paronon
+(define (disp-cute num)
+  (if(> num 2)
+     "nones"
+     (if(< num 2) "pares" "empate")))
+
+(define (paronon x1 x2 x3 x4)(disp-cute(odd-future(list x1 x2 x3 x4)))) 
