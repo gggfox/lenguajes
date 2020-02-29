@@ -1,0 +1,3 @@
+#lang racket
+;function for finding the largest of 4 numbers
+(define (mayor x1 x2 x3 x4) (max x1 x2 x3 x4)) 
