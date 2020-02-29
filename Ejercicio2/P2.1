@@ -1,0 +1,11 @@
+#lang racket
+;function for returnin 1 if odd or 0 if even
+(define (add x) (if (odd? x) 1 0))
+
+;function to display paronon
+(define (disp-cute num)
+  (if(> num 2)
+     "nones"
+     (if(< num 2) "pares" "empate")))
+
+(define (paronon x1 x2 x3 x4)(disp-cute(+(add x1) (add x2) (add x3) (add x4)))) 
