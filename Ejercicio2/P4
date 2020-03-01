@@ -1,0 +1,8 @@
+#lang racket
+
+(define (fibo3 num)
+  (cond
+    ((= num 1)1)
+    ((= num 2)1)
+    ((= num 3)1)
+    (true (+(fibo3(- num 1))(fibo3 (- num 2))(fibo3 (- num 3)))))) 
