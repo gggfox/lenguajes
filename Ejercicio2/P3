@@ -1,0 +1,9 @@
+#lang racket
+;recursive loop for finding the series from 1 to n of (2/a)+1
+(define (Serie num)
+  (cond
+    [(= num 0) 0]
+      [else (+ (+ 1 (/ 2 num))(Serie (- num 1)))]
+      ))
+
+;(2/a)+1 
