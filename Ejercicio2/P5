@@ -1,0 +1,6 @@
+#lang racket
+(define (fibo3t n)(fibo3t-aux n 1 1 1))
+
+(define (fibo3t-aux n a b c)
+  (if (<= n  1)c
+      (fibo3t-aux (sub1 n)(+ a b c) a b))) 
